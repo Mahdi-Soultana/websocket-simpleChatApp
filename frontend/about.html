@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="./aboutme.css" />
+    <!-- icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-center">
+          <div class="nav-mobile">
+            <div class="logo">
+              <h1>ChatApp</h1>
+            </div>
+            <div class="burger">
+              <span><i class="fas fa-bars"></i></span>
+            </div>
+          </div>
+          <ul>
+            <li><a href="/"> Home</a></li>
+            <li><a href="./about.html"> ABOUT</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="about_contianer">
+      <div>
+        <div class="imgContainerAbout">
+          <img src="./img/mahdi-soultana.png" alt="Mahdi Soultana" />
+          <div class="hi">
+            <span>👋</span>
+            <span>Hi</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4>Hello I'm really Happy To See You Here 🥰!</h4>
+        <h3>Who is This?👀👆</h3>
+        <p>
+          Hey Helloooooo 😆 <br />
+          I am Mahdi Soultana Form Morroco I web developer by JavaScript HTML
+          CSS I Love my Path Javascrpit Curve Learning Ilove to discover and
+          work with the latest technologie Like <b>ReactJS</b> , <b>NextJs</b>,
+          <b>Gatsby </b> <b> GraphQL</b>, <b> MongoDB </b>(Mongoose)
+          <b>Socket</b>, <b>FireBase</b> , <b>NodeJS</b>,<b>contentFull</b>,
+          <b>wordpress</b>, <b>stripe</b>.
+          <br />
+        </p>
+        <p class="wich">
+          I hope To Find and meet all kind teams developpers and clients for
+          work and build good solid realtionship togther forward to make earth
+          somewhere good for living !
+        </p>
+        <p class="end">
+          Peace🙏 <br />
+          Thank you for All 🥳
+        </p>
+        <h2 class="findme">You can Reach me on My Social Netwok 👇 !</h2>
+        <div>
+          <ul class="social">
+            <li>
+              <a href="https://github.com/Mahdi-Soultana" target="_blank"
+                ><i class="fab fa-github-square"></i>GitHub</a
+              >
+            </li>
+            <li>
+              <a href="https://twitter.com/mahdi_soultana" target="_blank"
+                ><i class="fab fa-twitter-square"></i>LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/mahdisoultana/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i>Twitter</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script>
+      const navLinks = document.querySelector("nav ul");
+      const burger = document.querySelector(".burger");
+      burger.addEventListener("click", () => navLinks.classList.toggle("show"));
+    </script>
+  </body>
+</html>

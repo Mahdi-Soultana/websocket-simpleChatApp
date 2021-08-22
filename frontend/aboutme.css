@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 110.5%;
+}
+body {
+  font-family: "Oswald", sans-serif;
+}
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 1rem;
+}
+
+ul:not(.messages ul) {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+li {
+  padding: 0.5rem 1rem;
+}
+nav {
+  color: white;
+  background-image: linear-gradient(rgb(31, 31, 31), rgb(104, 104, 104));
+}
+nav a {
+  text-decoration: none;
+  font-size: large;
+  color: white;
+}
+nav .nav-center ul {
+  display: none;
+}
+
+.nav-center {
+  padding: 1rem;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav-mobile,
+li > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.burger {
+  font-size: 2rem;
+  background-color: #333;
+  color: rgb(243, 243, 243);
+  padding: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+  .nav-center,
+  nav .nav-center ul {
+    display: flex;
+  }
+
+  .burger {
+    display: none;
+  }
+}
+
+.about_contianer {
+  padding: 4vw;
+}
+.nav-center {
+  display: flex;
+}
+.about_contianer h4 {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.about_contianer .imgContainerAbout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.about_contianer .hi {
+  font-weight: 300;
+  font-size: 3rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.about_contianer h3 {
+  font-weight: 200;
+  font-style: italic;
+  font-size: 2rem;
+  color: #333;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.about_contianer p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+.about_contianer p b {
+  color: tomato;
+  position: relative;
+}
+.about_contianer p b:nth-child(even)::after {
+  content: "⭐️";
+  position: relative;
+  top: -2px;
+  font-size: 1rem;
+  right: 0;
+  color: tomato;
+}
+.about_contianer p b:nth-child(odd)::after {
+  content: "🔥";
+  position: relative;
+  top: -2px;
+  font-size: 1rem;
+  right: 0;
+  color: tomato;
+}
+.wich {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.end {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.findme {
+  color: #333;
+  margin-top: 3vw;
+  margin-left: 3vw;
+  text-align: left;
+}
+.imgContainerAbout img {
+  width: 90%;
+}
+@media screen and (min-width: 900px) {
+  .about_contianer {
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: minmax(200px, 300px) 1fr;
+  }
+}
+.nav-center {
+  padding: 1rem;
+  width: 100%;
+  justify-content: space-between;
+}
+nav .nav-center ul.show {
+  display: block;
+}
+.nav-mobile {
+  width: 100%;
+}
+.burger {
+  cursor: pointer;
+}
+i {
+  pointer-events: none;
+}
+.social {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social a {
+  color: rgb(20, 151, 238);
+  /* text-decoration: none; */
+  display: flex;
+  align-items: center;
+}
+.social a:hover {
+  color: rgb(238, 125, 20);
+  /* text-decoration: none; */
+}
+a i {
+  display: inline-block;
+  margin: 0.5rem;
+  /* background: crimson; */
+  font-size: 1.6rem;
+}
